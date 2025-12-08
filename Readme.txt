@@ -33,4 +33,5 @@ HOW TO RUN THIS PROJECT
 
 This will load the dataset, train the machine learning models, and show the results.
 
-Note: This project can be accessed from the public GitHub repository:https://github.com/sharif2008/ML-NIDS-CPSC-673
+Note 1: This project can be accessed from the public GitHub repository:https://github.com/sharif2008/ML-NIDS-CPSC-673
+Note 2: If jupyter notebook file does not work, then relevant python script is provied under optional[not preferred].
