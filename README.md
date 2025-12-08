@@ -39,7 +39,7 @@ Dataset used: CIC-IDS-2017
 
 Due to storage limitations, only one sample CSV is included in this repository.  
 The full dataset can be downloaded from public CIC-IDS-2017 sources.  
-A personal data drive link can also be used (if access granted).
+or  Personal storage link: https://gounbc-my.sharepoint.com/:f:/r/personal/islam5_unbc_ca/Documents/data?csf=1&web=1&e=QQQYWG
 
 Place all required CSV files inside the local `data/` folder.
 
@@ -47,7 +47,7 @@ Expected structure:
 ```
 ML-NIDS-CPSC-673/
 ├─ data/
-│  ├─ sample_dataset.csv
+│  ├─ Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv
 │  ├─ ... full CIC-IDS-2017 files (optional)
 ├─ notebooks/
 │  ├─ NIDS_DM.ipynb
@@ -141,3 +141,5 @@ The notebook displays:
 MSc Computer Science (Research-based)  
 University of Northern British Columbia  
 Course: CPSC 673 — Data Mining
+UNBC ID : 230168914
+Email: islam5@unbc.ca
