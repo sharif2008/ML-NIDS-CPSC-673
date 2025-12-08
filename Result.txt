@@ -1,0 +1,193 @@
+Total records: (1541705, 79)
+After cleaning (10% of the imported records): (154170, 79)
+
+Attack_Binary
+0    112841
+1     41329
+Name: count, dtype: int64
+
+Highly correlated features to drop (> 0.9 ):
+- Active Min
+- Avg Bwd Segment Size
+- Bwd IAT Min
+- Bwd Packet Length Max
+- Bwd Packet Length Mean
+- Bwd Packet Length Std
+- Flow IAT Std
+- Fwd Header Length
+- Fwd Header Length.1
+- Fwd IAT Max
+- Fwd IAT Std
+- Fwd IAT Total
+- Fwd Packet Length Max
+- Fwd Packet Length Mean
+- Fwd Packet Length Std
+- Fwd Packets/s
+- Idle Max
+- Idle Mean
+- Idle Min
+- Max Packet Length
+- Packet Length Mean
+- Packet Length Std
+- Packet Length Variance
+- RST Flag Count
+- SYN Flag Count
+- Subflow Bwd Packets
+
+Number of original features: 70
+Number of features after correlation filter: 54
+
+
+
+
+=== Training LogisticRegression ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.92674   0.96966   0.94771     33852
+      ATTACK    0.90518   0.79071   0.84408     12399
+
+    accuracy                        0.92169     46251
+   macro avg    0.91596   0.88019   0.89590     46251
+weighted avg    0.92096   0.92169   0.91993     46251
+
+
+=== Training KNN ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99784   0.99835   0.99810     33852
+      ATTACK    0.99548   0.99411   0.99479     12399
+
+    accuracy                        0.99721     46251
+   macro avg    0.99666   0.99623   0.99644     46251
+weighted avg    0.99721   0.99721   0.99721     46251
+
+
+=== Training SVM_RBF ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.96532   0.99483   0.97985     33852
+      ATTACK    0.98460   0.90241   0.94172     12399
+
+    accuracy                        0.97005     46251
+   macro avg    0.97496   0.94862   0.96078     46251
+weighted avg    0.97049   0.97005   0.96963     46251
+
+
+=== Training NaiveBayes ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.97169   0.18856   0.31583     33852
+      ATTACK    0.30777   0.98500   0.46900     12399
+
+    accuracy                        0.40207     46251
+   macro avg    0.63973   0.58678   0.39241     46251
+weighted avg    0.79370   0.40207   0.35689     46251
+
+
+=== Training DecisionTree ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99938   0.99926   0.99932     33852
+      ATTACK    0.99798   0.99831   0.99815     12399
+
+    accuracy                        0.99901     46251
+   macro avg    0.99868   0.99878   0.99873     46251
+weighted avg    0.99901   0.99901   0.99901     46251
+
+
+=== Training RandomForest ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99941   0.99968   0.99954     33852
+      ATTACK    0.99911   0.99839   0.99875     12399
+
+    accuracy                        0.99933     46251
+   macro avg    0.99926   0.99903   0.99915     46251
+weighted avg    0.99933   0.99933   0.99933     46251
+
+
+=== Training GradientBoosting ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99655   0.99953   0.99804     33852
+      ATTACK    0.99870   0.99056   0.99461     12399
+
+    accuracy                        0.99712     46251
+   macro avg    0.99763   0.99505   0.99633     46251
+weighted avg    0.99713   0.99712   0.99712     46251
+
+
+=== Training AdaBoost ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99472   0.99143   0.99308     33852
+      ATTACK    0.97682   0.98564   0.98121     12399
+
+    accuracy                        0.98988     46251
+   macro avg    0.98577   0.98854   0.98714     46251
+weighted avg    0.98992   0.98988   0.98990     46251
+
+
+=== Training XGBoost ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99982   0.99941   0.99962     33852
+      ATTACK    0.99839   0.99952   0.99895     12399
+
+    accuracy                        0.99944     46251
+   macro avg    0.99911   0.99946   0.99928     46251
+weighted avg    0.99944   0.99944   0.99944     46251
+
+
+
+=== Training CatBoost ===
+              precision    recall  f1-score   support
+
+      BENIGN    0.99973   0.99944   0.99959     33852
+      ATTACK    0.99847   0.99927   0.99887     12399
+
+    accuracy                        0.99939     46251
+   macro avg    0.99910   0.99936   0.99923     46251
+weighted avg    0.99939   0.99939   0.99939     46251
+
+
+
+
+Model	Accuracy (%)	Precision (%)	Recall (%)	F1-Score (%)
+8	XGBoost	99.943785	99.943828	99.943785	99.943795
+10	CatBoost	99.939461	99.939488	99.939461	99.939468
+5	RandomForest	99.932974	99.932969	99.932974	99.932967
+4	DecisionTree	99.900543	99.900555	99.900543	99.900548
+1	KNN	99.721087	99.721000	99.721087	99.721026
+6	GradientBoosting	99.712439	99.712907	99.712439	99.712065
+7	AdaBoost	98.988130	98.992466	98.988130	98.989566
+2	SVM_RBF	97.005470	97.048623	97.005470	96.962801
+0	LogisticRegression	92.168818	92.095736	92.168818	91.993151
+3	NaiveBayes	40.206698	79.370282	40.206698	35.688900
+
+
+
+
+=====================
+
+Feature	Importance
+1	Average Packet Size	0.151541
+14	Subflow Bwd Bytes	0.110224
+18	Total Length of Bwd Packets	0.098789
+5	Destination Port	0.068081
+7	Flow IAT Max	0.052720
+19	Total Length of Fwd Packets	0.051618
+15	Subflow Fwd Bytes	0.048843
+2	Avg Fwd Segment Size	0.039109
+17	Total Fwd Packets	0.037998
+13	PSH Flag Count	0.037981
+3	Bwd Header Length	0.035333
+11	Init_Win_bytes_backward	0.035124
+12	Init_Win_bytes_forward	0.035022
+16	Subflow Fwd Packets	0.034649
+10	Fwd IAT Mean	0.031539
+9	Flow Packets/s	0.030267
+4	Bwd Packets/s	0.027613
+8	Flow IAT Mean	0.027302
+6	Flow Bytes/s	0.024020
+0	ACK Flag Count	0.022227
