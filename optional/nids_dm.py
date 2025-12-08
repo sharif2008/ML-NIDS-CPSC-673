@@ -75,8 +75,11 @@ Suggested files:
 """
 
 # TODO: adjust these paths to your local data directory
-print("For best learning at 4 files are required")
+print("For best learning the more record is better")
 files = [
+    "../data/Monday-WorkingHours.pcap_ISCX.csv",
+    "../data/Wednesday-workingHours.pcap_ISCX.csv",
+    "../data/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
     "../data/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
 ]
 files
