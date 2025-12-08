@@ -138,8 +138,8 @@ The notebook displays:
 
 ## ✨ Author
 **Md Shariful Islam**  
-MSc Computer Science (Research-based)  
+UNBC ID: **230168914**  
+Email: **islam5@unbc.ca**  
+**MSc Computer Science (Research-based)**  
 University of Northern British Columbia  
-Course: CPSC 673 — Data Mining
-UNBC ID : 230168914
-Email: islam5@unbc.ca
+Course: **CPSC 673 — Data Mining**
