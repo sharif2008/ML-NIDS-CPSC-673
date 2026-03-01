@@ -37,10 +37,6 @@ Optional (if installed):
 ## 📊 Dataset  
 Dataset used: CIC-IDS-2017
 
-Due to storage limitations, only one sample CSV is included in this repository.  
-The full dataset can be downloaded from public CIC-IDS-2017 sources.  
-or  Personal storage link: https://gounbc-my.sharepoint.com/:f:/r/personal/islam5_unbc_ca/Documents/data?csf=1&web=1&e=QQQYWG
-
 Place all required CSV files inside the local `data/` folder.
 
 Expected structure:
