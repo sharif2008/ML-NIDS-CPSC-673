@@ -1,6 +1,6 @@
 # ML-NIDS-CPSC-673  
 Network Intrusion Detection System using Machine Learning  
-**CPSC-673: Data Mining Project**
+
 
 This project implements multiple machine learning algorithms to detect network intrusions using the CIC-IDS-2017 dataset.  
 The objective is to classify network flows as **BENIGN** or **ATTACK** using supervised machine learning techniques.
@@ -138,8 +138,4 @@ The notebook displays:
 
 ## ✨ Author
 **Md Shariful Islam**  
-UNBC ID: **230168914**  
-Email: **islam5@unbc.ca**  
-**MSc Computer Science (Research-based)**  
-University of Northern British Columbia  
-Course: **CPSC 673 — Data Mining**
+
